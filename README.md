@@ -1,213 +1,112 @@
-# Awesome-Container-Registry
+# 📦 Awesome Container Registry Ecosystem
 
-## Top Container Registry Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on OCI Image Storage, Vulnerability Scanning, Replication, RBAC, Helm/OCI Artifacts & Private Registries*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Container Registries**. These systems store, distribute, scan, and govern container images and OCI artifacts for development, CI/CD, and production Kubernetes environments.
-
-
-
-**Examples** include Docker Hub, GitHub Container Registry, GitLab Container Registry, Harbor, Amazon ECR, Google Artifact Registry, Azure Container Registry, JFrog Artifactory, Quay.io, and Nexus Repository (the category leaders).
-
-
-
-**Open-source emphasis**: Container registries have excellent open-source options. **Harbor** (CNCF graduated), **Distribution** (OCI registry), **Zot**, and related projects enable fully self-hosted, secure private registries. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Docker Hub](https://hub.docker.com/)**  
-
-  The largest public container registry—default for many developers, with official images, automated builds, and private repositories.
-
-
-
-- **[GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)**  
-
-  GitHub’s integrated OCI registry tightly coupled with repositories, Actions, and package permissions.
-
-
-
-- **[GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)**  
-
-  Built-in registry for GitLab projects—CI/CD native push/pull and integrated with GitLab security features.
-
-
-
-- **[Harbor](https://goharbor.io/)**  
-
-  CNCF graduated open-source registry with commercial support options—scanning, signing, replication, and RBAC (also widely self-hosted).
-
-
-
-- **[Amazon ECR](https://aws.amazon.com/ecr/)**  
-
-  AWS-managed container registry with IAM integration, image scanning, and tight coupling to ECS/EKS/Fargate.
-
-
-
-- **[Google Artifact Registry](https://cloud.google.com/artifact-registry)**  
-
-  GCP’s unified artifact registry for containers and other package formats with IAM and regional control.
-
-
-
-- **[Azure Container Registry](https://azure.microsoft.com/en-us/products/container-registry/)**  
-
-  Azure-managed registry with geo-replication, security integrations, and AKS-friendly workflows.
-
-
-
-- **[JFrog Artifactory](https://jfrog.com/artifactory/)**  
-
-  Universal artifact repository supporting Docker/OCI along with many other package types and deep DevOps integration.
-
-
-
-- **[Quay.io](https://quay.io/)**  
-
-  Red Hat’s hosted container registry with strong security focus, Clair-based scanning, and access controls.
-
-
-
-- **[Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository)**  
-
-  Sonatype’s repository manager with Docker/OCI support alongside Maven, npm, and other formats (OSS and Pro editions).
-
-
-
-## Open-Source GitHub Projects
-
-- **[Harbor](https://github.com/goharbor/harbor)**  
-
-  Leading CNCF graduated open-source cloud-native registry—stores, signs, and scans images; RBAC, replication, and vulnerability scanning.
-
-
-
-- **[Distribution (Docker Registry / OCI)](https://github.com/distribution/distribution)**  
-
-  Core open-source OCI Distribution Specification implementation—foundation for many registries including Docker Hub components and Harbor.
-
-
-
-- **[Zot Registry](https://github.com/project-zot/zot)**  
-
-  Lightweight, OCI-native open-source registry focused on simplicity, security, and modern distribution features.
-
-
-
-- **[Nexus Repository OSS](https://github.com/sonatype/nexus-public)**  
-
-  Open-source edition of Nexus Repository Manager with Docker and multi-format artifact support.
-
-
-
-- **[Quay (Project Quay)](https://github.com/quay/quay)**  
-
-  Open-source container registry codebase underlying Quay.io, with security and multi-tenancy features.
-
-
-
-- **[Docker Registry UI / community frontends](https://github.com/)**  
-
-  Open web UIs and management interfaces for self-hosted Distribution-based registries.
-
-
-
-- **[Kraken / dragonfly-style P2P distribution](https://github.com/)**  
-
-  Open projects for large-scale, efficient image distribution across clusters.
-
-
-
-- **[cosign + registry integration](https://github.com/sigstore/cosign)**  
-
-  Open signing and verification workflows commonly paired with Harbor and other OCI registries.
-
-
-
-- **[Clair](https://github.com/quay/clair)**  
-
-  Open-source vulnerability scanner frequently integrated with Quay, Harbor, and other registries.
-
-
-
-- **[Documentation and Harbor / Distribution playbooks](https://goharbor.io/docs/)**  
-
-  Guides for deploying, securing, and operating self-hosted container registries.
-
-
-
-### Additional Strong Open-Source Options
-
-- Self-hosting **Harbor** for enterprise-grade private registry with scanning and RBAC.
-
-- Running plain **Distribution** for simple, lightweight private registries.
-
-- Using **Zot** when a minimal OCI-native registry is preferred.
-
-- Combining open registries with **Trivy/Clair** scanning and **cosign** signing.
-
-- Accepting that fully managed multi-region, zero-ops cloud registries and deep vendor IAM integration still favor SaaS options (ECR, Artifact Registry, ACR, Docker Hub, GHCR, etc.).
-
-- Focusing open-source efforts on data sovereignty, air-gapped environments, and cost control at scale.
-
-
-
-**Frameworks for building custom systems**: Deploy Harbor or Distribution on Kubernetes → enable scanning and retention policies → replicate to edge/regional registries → sign images with cosign → enforce pulls via admission controllers. Suitable for platform teams and regulated environments. Many organizations still use cloud-managed registries for simplicity.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Container registries store critical build artifacts. Secure access control, scanning, and backups are essential for any self-hosted deployment. This list is not security advice.
-
-
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Container-Registry/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Container-Registry?style=flat-square&logo=github" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Container-Registry/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Container-Registry?style=flat-square&logo=github" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Container-Registry/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Container-Registry?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007/Awesome-Container-Registry/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Container-Registry?style=flat-square" alt="Last Commit"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 ---
 
-**Made for platform engineers, DevOps teams, and open-source registry advocates.**
+![Awesome Container Registry Banner](assets/banner.svg)
 
-Let's keep images trusted, distributed efficiently, and registries as open as practical.
+## 🚀 Overview & Key Concepts
+
+Welcome to the **Awesome Container Registry** guide! This repository curates the top **SaaS cloud platforms** and **open-source projects** for storing, managing, scanning, and distributing **OCI (Open Container Initiative) artifacts** and **Docker container images**.
+
+Whether you are building enterprise DevSecOps pipelines on Kubernetes (EKS/GKE/AKS), self-hosting an air-gapped private registry, or configuring P2P image distribution across thousands of edge nodes, this guide provides side-by-side pricing, features, security scanning, and star-ranked open-source alternatives.
+
+---
+
+## 📑 Table of Contents
+
+- [🌐 SaaS / Hosted Container Registries](#-saas--hosted-container-registries)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 🌐 SaaS / Hosted Container Registries
+
+### 📊 Sector Market Size & Fragmentation Analysis
+
+> [!NOTE]
+> **Market Size & Outlook (2026):** The global Container Registry and Cloud Artifact Repository market is estimated at **~$3.2 Billion (USD)**, growing at a ~22.5% CAGR driven by widespread adoption of Kubernetes, cloud-native microservices, and automated DevSecOps pipelines.
+> 
+> **Market Structure:** The sector is **Moderately Fragmented / Cloud Hyperscaler Concentrated**. Public cloud workloads are predominantly dominated by hyperscalers (AWS ECR, Azure ACR, GCP Artifact Registry) and default image hubs (Docker Hub, GitHub GHCR). However, multi-cloud enterprises, air-gapped setups, and regulated security environments maintain strong demand for specialized registries (JFrog, Harbor, Quay, Sonatype).
+
+### 🏆 SaaS Platforms Comparison Table
+
+Below is the curated list of major SaaS container registry providers sorted by **Company Scale / Market Cap (Descending)**:
+
+| Platform / Vendor | Description & Focus | Pricing (Starting Paid Tier) | Free Tier Limits | Company Scale / Market Cap |
+| :--- | :--- | :--- | :--- | :--- |
+| **[GitHub Container Registry (GHCR)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)** | Tightly integrated OCI package host linked with GitHub Repos, Actions, and granular permissions. | $0.25/GB storage & $0.50/GB data transfer (Free for public images) | 500 MB storage & 1 GB transfer/month included with Free GitHub account | **~$3.10 Trillion** *(Microsoft)* |
+| **[Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/products/container-registry/)** | Microsoft Azure-managed registry with geo-replication, ACR Tasks, and native AKS integration. | $0.167/day (~$5.00/month) for Basic Tier (10 GB storage included) | $200 free credit for 30 days via Azure Free Account | **~$3.10 Trillion** *(Microsoft)* |
+| **[Google Artifact Registry](https://cloud.google.com/artifact-registry)** | GCP's unified registry supporting Docker/OCI, Helm, Maven, and npm with IAM control. | $0.10/GB per month storage + standard data transfer egress | 0.5 GB/month storage free forever + $300 free trial credits (90 days) | **~$2.10 Trillion** *(Alphabet)* |
+| **[Amazon ECR](https://aws.amazon.com/ecr/)** | High-availability AWS container registry with IAM security, KMS encryption, & EKS integration. | $0.10/GB per month for private storage + standard AWS egress | 500 MB/month private storage for 12 months; 50 GB/month public storage free forever | **~$2.00 Trillion** *(Amazon)* |
+| **[Quay.io](https://quay.io/)** | Red Hat's container registry featuring Clair vulnerability scanning and security auditing. | $15/month Developer Tier (up to 5 private repositories) | Unlimited public repositories free forever | **~$200 Billion** *(IBM / Red Hat)* |
+| **[GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)** | Native container repository embedded in GitLab CI/CD with security scanning pipelines. | $29/user/month (GitLab Premium Tier) | 5 GB storage & 10 GB transfer/month included on GitLab Free plan | **~$8.5 Billion** |
+| **[JFrog Artifactory Cloud](https://jfrog.com/artifactory/)** | Universal artifact management platform supporting Docker, Helm, OCI, and 30+ package formats. | $150/month (Pro Cloud plan) or $0.09/GB-hr cloud consumption | 2 GB storage & 10 GB transfer/month free forever | **~$3.5 Billion** |
+| **[Docker Hub](https://hub.docker.com/)** | The world's largest public container image registry—default for Docker CLI and official images. | $5/user/month (Personal/Pro plan billed annually) or $7/mo monthly | Unlimited public repos, 1 private repo, 200 pulls per 6 hours (authenticated) | **~$2.1 Billion** *(Private)* |
+| **[Nexus Repository Cloud](https://www.sonatype.com/products/sonatype-nexus-repository)** | Sonatype's enterprise repository manager with container image hosting and software supply chain security. | $120/user/year (~$10/user/month) for Sonatype Nexus Pro | Unlimited free usage with self-hosted Nexus Repository OSS edition | **~$1.5 Billion** *(Private)* |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Container registries boast a rich open-source ecosystem. Self-hosting enables data sovereignty, air-gapped security, zero cost at scale, and custom RBAC policies.
+
+The projects below are sorted by **GitHub Star Count (Descending)**:
+
+| Rank | Project Name | Description & Key Features | Stars Badge (Link to Stargazers) |
+| :---: | :--- | :--- | :---: |
+| 1 | **[Harbor](https://github.com/goharbor/harbor)** | **CNCF Graduated** enterprise-grade cloud-native registry. Features RBAC, vulnerability scanning (Trivy), image signing (Cosign/Notary), policy management, and cross-registry replication. | [![GitHub stars](https://img.shields.io/github/stars/goharbor/harbor?style=social&color=white)](https://github.com/goharbor/harbor/stargazers) |
+| 2 | **[Skopeo](https://github.com/containers/skopeo)** | Command-line utility that performs operations on container images and registries (copy, inspect, delete, sign) without requiring a running Docker daemon. | [![GitHub stars](https://img.shields.io/github/stars/containers/skopeo?style=social&color=white)](https://github.com/containers/skopeo/stargazers) |
+| 3 | **[Clair](https://github.com/quay/clair)** | Open-source vulnerability parsing, tracking, and static analysis engine for container images. Frequently integrated with Quay and Harbor. | [![GitHub stars](https://img.shields.io/github/stars/quay/clair?style=social&color=white)](https://github.com/quay/clair/stargazers) |
+| 4 | **[Distribution](https://github.com/distribution/distribution)** | **CNCF Project** providing the reference implementation of the OCI Distribution Specification. Serves as the foundation for Docker Hub and many custom registries. | [![GitHub stars](https://img.shields.io/github/stars/distribution/distribution?style=social&color=white)](https://github.com/distribution/distribution/stargazers) |
+| 5 | **[Kraken](https://github.com/uber/kraken)** | P2P Docker registry developed by Uber, optimized for distributing terabytes of image data in seconds across thousands of hosts in large-scale clusters. | [![GitHub stars](https://img.shields.io/github/stars/uber/kraken?style=social&color=white)](https://github.com/uber/kraken/stargazers) |
+| 6 | **[Cosign](https://github.com/sigstore/cosign)** | Container signing, verification, and storage in OCI registries. Part of the Sigstore project for securing software supply chains. | [![GitHub stars](https://img.shields.io/github/stars/sigstore/cosign?style=social&color=white)](https://github.com/sigstore/cosign/stargazers) |
+| 7 | **[go-containerregistry](https://github.com/google/go-containerregistry)** | Google's Go library and CLI toolkit (`crane`) for interacting with OCI registries, building images, and inspecting remote image manifests. | [![GitHub stars](https://img.shields.io/github/stars/google/go-containerregistry?style=social&color=white)](https://github.com/google/go-containerregistry/stargazers) |
+| 8 | **[Spegel](https://github.com/spegel-org/spegel)** | Stateless P2P OCI registry for Kubernetes. Enables nodes to share container images directly without external registry network overhead. | [![GitHub stars](https://img.shields.io/github/stars/spegel-org/spegel?style=social&color=white)](https://github.com/spegel-org/spegel/stargazers) |
+| 9 | **[Docker Registry UI](https://github.com/Joxit/docker-registry-ui)** | User-friendly web user interface for private Docker `distribution` registries with image search, tag deletion, and multi-registry management. | [![GitHub stars](https://img.shields.io/github/stars/Joxit/docker-registry-ui?style=social&color=white)](https://github.com/Joxit/docker-registry-ui/stargazers) |
+| 10 | **[Dragonfly 2](https://github.com/dragonflyoss/Dragonfly2)** | **CNCF Incubating** peer-to-peer file and image distribution system. Speeds up large container image downloads across Kubernetes clusters. | [![GitHub stars](https://img.shields.io/github/stars/dragonflyoss/Dragonfly2?style=social&color=white)](https://github.com/dragonflyoss/Dragonfly2/stargazers) |
+| 11 | **[Project Quay](https://github.com/quay/quay)** | Open-source container registry codebase behind Quay.io. Includes built-in access control, Clair security integration, and geo-replication. | [![GitHub stars](https://img.shields.io/github/stars/quay/quay?style=social&color=white)](https://github.com/quay/quay/stargazers) |
+| 12 | **[Zot Registry](https://github.com/project-zot/zot)** | Production-ready, OCI-native container registry designed for micro-services, edge devices, and cloud deployments with low resource footprint. | [![GitHub stars](https://img.shields.io/github/stars/project-zot/zot?style=social&color=white)](https://github.com/project-zot/zot/stargazers) |
+| 13 | **[Nexus Repository OSS](https://github.com/sonatype/nexus-public)** | Open-source binary repository manager supporting Docker/OCI container images along with Java (Maven), Python (PyPI), and JavaScript (npm). | [![GitHub stars](https://img.shields.io/github/stars/sonatype/nexus-public?style=social&color=white)](https://github.com/sonatype/nexus-public/stargazers) |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from platform engineers, DevOps practitioners, and open-source enthusiasts are welcome!
+
+1. 🍴 **Fork** this repository.
+2. 📝 Add or update entries in `README.md` following the tabular format.
+3. 🔍 Ensure accurate pricing, free tier details, official website links, and GitHub stargazers links.
+4. 🚀 Submit a **Pull Request** with a clear explanation of your changes.
+
+For curated lists guidelines, explore [Awesome Awesome Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this Container Registry Ecosystem list useful for your infrastructure planning or research, please consider supporting the project:
+
+- ⭐ **Star** this repository to increase visibility!
+- 🔀 **Fork** and share with your DevOps & Platform Engineering teams.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+<a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-Buy%20Me%20A%20Coffee-ff69b4?style=for-the-badge&logo=github-sponsors" alt="Sponsor"/></a>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Container-Registry&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Container-Registry&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+This repository is a community-curated collection intended for educational and informational purposes. Pricing, free tier limits, and valuations are subject to change by vendors. Always refer to official provider documentation for binding commercial SLA and pricing terms.
